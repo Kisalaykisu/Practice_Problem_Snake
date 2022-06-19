@@ -1,8 +1,8 @@
-/* Q-5) Ensure the player gets
-        to exact winning
-        position 100. - Note in case the player position go above
-        100, the player stays in the same previous
-        position till the player gets the exact
+/* Q-6) Report the number of
+        times the dice was
+        played to win the game
+        and also the position
+        after every die role.
 
 */
 
@@ -22,7 +22,7 @@ public class Practice_Problem_Snake {
         Random rand = new Random();  //Random obj initializer
 
         while(position<100) {
-            int dice = rand.nextInt(6) + 1; //Random input integer
+            int dice = rand.nextInt(6) + 1;
             dieRolls += 1;
             int options = rand.nextInt(3) + 1;
 
