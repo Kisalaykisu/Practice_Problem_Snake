@@ -1,7 +1,9 @@
-/* Q-4) Repeat till the Player
-        reaches the winning
-        position 100. - Note In case the player position moves
-        below 0, then the player restarts from 0
+/* Q-5) Ensure the player gets
+        to exact winning
+        position 100. - Note in case the player position go above
+        100, the player stays in the same previous
+        position till the player gets the exact
+
 */
 
 package com.bridgelabz;
@@ -17,10 +19,10 @@ public class Practice_Problem_Snake {
         final int SNAKE=3;    // Snake take your life
         int dieRolls = 0;
 
-        Random rand = new Random();
+        Random rand = new Random();  //Random obj initializer
 
         while(position<100) {
-            int dice = rand.nextInt(6) + 1;   //Random input integer
+            int dice = rand.nextInt(6) + 1; //Random input integer
             dieRolls += 1;
             int options = rand.nextInt(3) + 1;
 
